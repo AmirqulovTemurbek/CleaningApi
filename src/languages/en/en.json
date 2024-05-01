@@ -1,0 +1,15 @@
+{
+    "nav": {
+        "navHome": "Home",
+        "about": "About",
+        "services": "Services",
+        "articles": "Articles",
+        "contact": "Contact",
+        "button": "Get a free quote"
+    },
+    "home": {
+        "homeTitle": "Quality cleaning for your home",
+        "homeInfo": "Condimentum mauris sit cursus amet id non neque pharetra nulla ornare sed facilisis senectus dapibus nibh ultrices eget suscipit aliquet et nulla magna lacus penatibus.",
+        "homebtn": "Get a free quote"
+    }
+}
