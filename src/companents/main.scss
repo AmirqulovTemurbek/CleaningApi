@@ -65,6 +65,7 @@ box-sizing: border-box;
 
 
 
+
 .contact {
     background-color: #F7F9FC;
     .contact-fluid{
@@ -97,17 +98,16 @@ box-sizing: border-box;
                 height: 73px;
                 margin-top: 50px;
                 opacity: 0px;
-                font-family: "Roboto";
+                font-family: "RobotoBold";
                 font-size: 18px;
                 font-weight: 700;
                 line-height: 20px;
                 text-align: center;
                 background-color: #fff;
+                color: #211F54;
             }
         }
         .contact-right{
-            // background-color: #fff;
-            width: 100%;
             .row{
                 margin-top: 20px;
                 label{
@@ -219,41 +219,209 @@ box-sizing: border-box;
 // Footer  
 .footer{
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-between;
+    
     h3{
         font-family: "RobotoBold";
         font-size: 28px;
-        font-weight: 700;
-        line-height: 36.01px;
-        text-align: left;
+        margin-bottom: 15px;
+    }
+    h2{
+        color: #0075FF;
+        font-family: "RobotoBold";
+        font-size: 28px;
+        margin-top: 10px;
     }
     p{
         font-family: "Roboto";
         font-size: 18px;
-    
+        margin-top: 10px;
     }
     .col{
-        padding: 50px;
-    }
+        padding: 50px 70px 0 0;
+        }
     .footer-contact{
         .footer-list{
-            
+            padding-left: 0;
             .footer-item{
                 list-style: none;
+                margin-top: 20px;
+                font-size: 18px;
             }
         }
     }
     .footer-btn{
-        width: 160px;
-            height: 50px;
-            border-radius: 25px;
-            text-align: center;
-            border: none;
-            background: linear-gradient(0deg, rgb(37, 33, 251) 0%, rgb(59, 105, 230) 100%);
-            color: #FFFFFF;
-            font-size: 16px;
-            font-family: 'Roboto';
-            margin-top: 20px;
+        width: 256px;
+        height: 72px;
+        border-radius: 25px;
+        text-align: center;
+        border: none;
+        background: linear-gradient(0deg, rgb(37, 33, 251) 0%, rgb(59, 105, 230) 100%);
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: 'RobotoBold';
+        margin-top: 10px;
     }
 }
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    margin: 70px 0 60px 0;
+    padding-top: 50px;
+    h2{
+        font-family: "Roboto";
+        font-size: 18px;
+        color: #6E7191;
+        span{
+            font-family: "Roboto";
+            font-size: 18px;
+            color: #0075FF;
+        }
+    }
+}
+
+
+@media (max-width: 1200px){
+    .home {
+        background: linear-gradient(65deg, rgba(134, 132, 132, .616), rgba(0, 0, 0, .205)), url(../assets/images/Group.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 20px;
+        border-radius: 20px;
+        .home_left{
+            .home_title {
+                font-size: 65px;
+                color: #ffffffec;
+            }
+            .home_info {
+                color: #ffffe8;
+            }  
+        }      
+        .home_right{
+            display: none;
+        }
+    }
+    .contact {
+        .contact-fluid{
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px 0;
+            .contact-left{
+                margin-bottom: 50px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                .contact-info{
+                    width: 700px;
+                }
+            }
+        }    
+    }
+
+    .services{
+        .head-services{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .services-btn{
+                margin-top: 20px;
+            }
+        }
+    .service-full{
+        margin-top: 40px;
+        .service-cards{
+            text-align: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .service{
+                width: 518px;
+                height: 554px;
+                margin-top: 40px;                
+                .service_img{
+                    width: 250px;
+                    height: 210px;
+                }
+                .service-title{
+                    font-size: 26px;
+                }
+            }
+        }
+    }  
+    }
+    .footer{
+        .footer-contact{
+            display: none;
+        }
+    }
+}
+
+@media  (max-width: 768px) { 
+    .contact {
+        .contact-fluid{
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px 0;
+            .contact-left{
+                margin-bottom: 50px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                .contact-info{
+                    width: 380px;
+                }
+            }
+            .contact-right{
+                align-items: center;
+                display: flex;
+                .row{
+                    display: flex;
+                    flex-direction: column;
+                    .form-group{
+                        align-items: center;
+                        display: flex-wrap;
+                        margin-top: 20px;
+                    }
+                }
+                .form-textarea{
+                    width: 100%;
+                }
+            }
+        }    
+    }
+    .footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+      
+        
+        
+        .col{
+            align-items: center;
+            width: 500px;
+            }
+        
+        .footer-btn{
+            align-items: center;
+        }
+    }
+    .footer-bottom{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-top: 1px solid #ccc;
+        margin: 70px 0 30px 0;
+        padding-top: 25px;
+        h2{
+            display: none;
+        }
+    }
+  }

@@ -103,55 +103,55 @@ export default function Home() {
     
       <div className='contact' id='connect'>
         <div className='container contact-fluid'>
-            <div className="contact-left col">
-                <h4 className='contact-title'>Contact Us</h4>
-                <p className='contact-info'>In dignissim euismod pretium amet enim a eu nam ut urna accumsan pellentesque lacus duis pharetra eutortor.</p>
+            <div className="contact-left container col">
+                <h4 className='contact-title'>{t("contact.contactTitle")}</h4>
+                <p className='contact-info'>{t("contact.contactInfo")}</p>
                 <h3 className='contact-title'>
-                    Not convinced yet?
+                  {t("contact.contactTitleSecond")}
                 </h3>
-                <p className='contact-info'>Massa bibendum consectetur maurisid gravida purus, dolor dui amet morbi non nunc urna purus diam.</p>
-                <button type='submit' className='contact-btn btn'>Browse our packages</button>
+                <p className='contact-info'>{t("contact.contactInfoSecond")}</p>
+                <button type='submit' className='contact-btn btn'>{t("contact.contactButton")}</button>
                         
             </div>
             <div className="contact-right col">
                 <form id="myForm" onSubmit={SendMessage}>
                     <div class="row">
                         <div class="col form-group">
-                            <label className="w3-text-teal"><b>Full name</b></label>
+                            <label className="w3-text-teal"><b>{t("contact.fullname")}</b></label>
                             <input className=" form-control w3-input w3-border w3-light-grey" id="name" type="text" />
                         </div>
                         <div class="col form-group">
-                            <label className="w3-text-teal"><b>Phone number</b></label>
+                            <label className="w3-text-teal"><b>{t("contact.number")}</b></label>
                             <input className=" form-control w3-input w3-border w3-light-grey" id='number' type="number" />
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col form-group">
-                            <label className="w3-text-teal"><b>Address</b></label>
+                            <label className="w3-text-teal"><b>{t("contact.address")}</b></label>
                             <input id="adress" className="form-control w3-input w3-border w3-light-grey" type="text" />
                         </div>
                         <div class="col form-group">
-                            <label className="w3-text-teal"><b>Email</b></label>
+                            <label className="w3-text-teal"><b>{t("contact.email")}</b></label>
                             <input id='email' className=" form-control w3-input w3-border w3-light-grey" type="email" />
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col form-group">
-                            <label className="w3-text-teal"><b>Requested service</b></label>
+                            <label className="w3-text-teal"><b>{t("contact.service")}</b></label>
                             <input id='service' className=" form-control w3-input w3-border w3-light-grey" type="text" />
                         </div>
                         <div class="col form-group">
-                            <label className="w3-text-teal"><b>Day of service</b></label>
+                            <label className="w3-text-teal"><b>{t("contact.dayService")}</b></label>
                             <input id='dataService' className=" form-control w3-input w3-border w3-light-grey" type="text" />
                         </div>
                     </div>
 
-                    <label className='text-label' for="textarea">Add a note</label>
+                    <label className='text-label' for="textarea">{t("contact.textarea")}</label>
                     <textarea  className='form-textarea form-control' id='textarea'>Some text</textarea>
 
-                    <button className='submit btn text-white' type='submit' loading={loading}>{loading?"Yuborilmoqda...":"Submit message"}</button>
+                    <button className='submit btn text-white' type='submit' loading={loading}>{loading?"Yuborilmoqda...": t("contact.sendButton")}</button>
                 </form>
             </div>
         </div>

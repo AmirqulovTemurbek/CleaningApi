@@ -1,5 +1,6 @@
-import React from 'react'
-import "./main.scss"
+import React from 'react';
+import "./main.scss";
+import FooterLogo from "../assets/images/Logo.png";
 
 export default function Footer() {
     const styleh3 = {
@@ -29,18 +30,24 @@ export default function Footer() {
                     </li>
                 </ul>
             </div>
-            {/* <div>
+            <div className='col'>
                 <h3>Hours</h3>
-                <h3>Monday to Friday</h3>
+                <h2>Monday to Friday</h2>
                 <p>6:00 AM - 9:00 PM</p>
-                <h3>Saturday & Sunday</h3>
+                <h2>Saturday & Sunday</h2>
                 <p>8:00 AM - 8:00 PM</p>
-            </div> */}
+            </div>
             <div className='col'>
                 <h3>Get a free estimate</h3>
                 <h2>(414) 567 - 2109</h2>
                 <p>Lorem ipsum dolor sit amet ectetur adipiscing elit, sed do eiusmod.</p>
                 <button className='footer-btn btn'>Request a free quote</button>
+            </div>
+        </div>
+        <div className='footer-bottom container'>
+            <img src={FooterLogo}/>
+            <div>
+                <h2>Copyright © Cleaning X | Designed by <span>BRIX Templates</span> - Powered by <span>Webflow  Licenses</span></h2>
             </div>
         </div>
     </div>

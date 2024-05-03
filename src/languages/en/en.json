@@ -11,5 +11,21 @@
         "homeTitle": "Quality cleaning for your home",
         "homeInfo": "Condimentum mauris sit cursus amet id non neque pharetra nulla ornare sed facilisis senectus dapibus nibh ultrices eget suscipit aliquet et nulla magna lacus penatibus.",
         "homebtn": "Get a free quote"
+    },
+    "contact": {
+        "contactTitle": "Contact Us",
+        "contactInfo": "In dignissim euismod pretium amet enim a eu nam ut urna accumsan pellentesque lacus duis pharetra eutortor.",
+        "contactTitleSecond" : "Not convinced yet?",
+        "contactInfoSecond": "Massa bibendum consectetur maurisid gravida purus, dolor dui amet morbi non nunc urna purus diam.",
+        "contactButton" : "Browse our packages",
+        "fullname": "Full name",
+        "number": "Phone number",
+        "address": "Address",
+        "email": "Email",
+        "service": "Requested service",
+        "dayService": "Day of service",
+        "textarea": "Add a note",
+        "sendButton": "Submit message"
+
     }
 }
