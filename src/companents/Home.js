@@ -1,10 +1,13 @@
 import React, { useEffect, useState} from 'react'
 import HomeImg from "../assets/images/Group.png";
 import "./main.scss";
-import Image from "../assets/images/IMAGE.png";
+import Image from "../assets/images/IMAGEhime.png";
 import buildImage from "../assets/images/IMAGE (1).png";
 import zavodImage from "../assets/images/IMAGE (1).png";
 import { useTranslation } from 'react-i18next';
+import firstImg from "../assets/images/IMAGE.png";
+import secondImg from "../assets/images/IMAGE (1).png";
+import thirdImg from "../assets/images/IMAGE (2).png";
 
 
 export default function Home() {
@@ -79,7 +82,6 @@ export default function Home() {
             console.error('Error fetching data:', error);
           });
       }, []);
-    //   console.log(articles);
 
   return (
     <div>
@@ -100,6 +102,27 @@ export default function Home() {
             </div>
       </div>
 
+    <div className='about container'>
+      <h2>About Us</h2>
+      <p className='aboutInfo'>Sagittis nibh scelerisque vitae eget vulputate sem elementum sed <br/> neque nisi felis non ultrices massa id egestas quam velit pretium nu.</p>
+      <div className='about-cards row'>
+        <div className='col'>
+          <img src={firstImg} />
+          <h2>1. Schedule online</h2>
+          <p>Sagittis nibh scelerisque vitae egetolment vulputate sem elementum sed n.</p>
+        </div>
+        <div className='col'>
+          <img src={secondImg} />
+          <h2>2. Pay online easily</h2>
+          <p>Vitae ut accumsan blandit ullamcorperolm suscipit dui gravida amet at nunc.</p>
+        </div>
+        <div className='col'>
+          <img src={thirdImg} />
+          <h2>3. Get your house cleaned</h2>
+          <p>Nunc maecenas sollicitudin metus tellus mattis sed porttitor cursus eleifend.</p>
+        </div>
+      </div>
+    </div>
     
       <div className='contact' id='connect'>
         <div className='container contact-fluid'>
@@ -177,15 +200,6 @@ export default function Home() {
             </div>
             
         </div>
-
-        
-
-
-        {/* <div className='covid'>
-            <div className='covid-img'>
-                <img src={Girl}/>
-            </div>
-        </div> */}
     </div>
   )
 }

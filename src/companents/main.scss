@@ -64,7 +64,44 @@ box-sizing: border-box;
 }
 
 
-
+.about{
+    margin: 70px 0 100px 0;
+    h2{
+        font-family: "RobotoBold";
+        font-size: 48px;
+        text-align: center;
+        margin: 15px 0 25px 0;
+    }
+    .aboutInfo{
+        font-family: "Roboto";
+        font-size: 21px;
+        text-align: center;
+        margin: 15px 0 55px 0;
+    }
+    .about-cards{
+        .col{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 200px;
+                height: 170px;
+                margin-bottom: 20px;
+            }
+            h2{
+                font-family: "RobotoBold";
+                font-size: 28px;
+                text-align: center;
+                margin: 15px 0 15px 0;
+            }
+            p{
+                font-family: "Roboto";
+                font-size: 21px;
+                text-align: center;
+            }
+        }
+    }
+}
 
 .contact {
     background-color: #F7F9FC;
